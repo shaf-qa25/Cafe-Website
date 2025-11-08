@@ -1,0 +1,212 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #333;
+  }
+  
+  header {
+    background-color:rgb(167, 104, 127);
+    color: rgb(170, 59, 100);
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: pink;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover{
+    color: #333;
+  }
+  
+  section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  h2 {
+    color: #c95a8a;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dc9bb3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: rgb(148, 100, 108);
+  }
+  
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+  
+      .table-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 20px;
+        max-width: 800px;
+        margin: 40px auto;
+      }
+  
+      .table {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+      }
+  
+      .table:hover {
+        transform: scale(1.05);
+      }
+  
+      .available {
+        background-color: #d4edda;
+        color: #155724;
+      }
+  
+      .occupied {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+  
+      .reserved {
+        background-color: #fff3cd;
+        color: #856404;
+      }
+  
+  footer {
+    background-color: #8a5d71;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    header {
+      font-size: large;
+      padding: 15px;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin: 8px 10px;
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    form {
+      padding: 0 10px;
+    }
+  
+    form input, form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .table-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 15px;
+      margin: 20px auto;
+    }
+  
+    .table {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    header {
+      font-size: medium;
+    }
+  
+    nav a {
+      font-size: 14px;
+      margin: 5px;
+    }
+  
+    h1, h2 {
+      font-size: 18px;
+    }
+  
+    form {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    form input, form button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .table-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+  
+    .table {
+      font-size: 13px;
+      padding: 12px;
+    }
+  
+    footer {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  
+  

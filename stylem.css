@@ -1,0 +1,250 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ead4e6;
+    color:rgb(103, 24, 61);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px; 
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+  .Starters-Container {
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    align-items:flex-start;
+  }
+  
+  .Veg-Starters,.Nonveg-Starters{
+    width: 48%;
+  }
+  
+  .Veg-Starters li, .Nonveg-Starters li {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .Veg-Starters img, .Nonveg-Starters img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .Main-Course {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .Veg-Main-Course, .Nonveg-Main-Course {
+    width: 48%;
+  }
+  .Veg-Main-Course li, .Nonveg-Main-Course li {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .Veg-Main-Course img, .Nonveg-Main-Course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .Veg-Starters h3,.Nonveg-Starters h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: x-large;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .Veg-Main-Course h3,.Nonveg-Main-Course h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: x-large;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .menu-category ul li {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .menu-category ul li img {
+    width: 60%;         
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top:0px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  
+  
+  nav a {
+      margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover{
+      color:black;
+  }
+  
+  .menu-category {
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .menu-category h2 {
+    color: #961d51;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:xx-large;
+  }
+  /* .menu-category h3 {
+      margin-left: 50%;
+  
+  } */
+  
+  .menu-category ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .menu-category li  strong{
+    display:block;
+    padding: 8px;
+    font-size: 18px;
+  }
+  
+  .Desserts {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 0;
+    
+    margin-top: 8px;
+  }
+  
+  .menu-category img {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .menu-category img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    border-radius: 12px;
+  }
+  
+  
+  footer {
+    background-color: #8a5d71;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .Starters-Container,
+    .Main-Course {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .Veg-Starters, .Nonveg-Starters,
+    .Veg-Main-Course, .Nonveg-Main-Course {
+      width: 100%;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin: 8px 10px;
+      font-size: 16px;
+    }
+  
+    .menu-category h2 {
+      font-size: x-large;
+    }
+  
+    .Veg-Starters h3, .Nonveg-Starters h3,
+    .Veg-Main-Course h3, .Nonveg-Main-Course h3 {
+      font-size: large;
+    }
+  
+    .menu-category li strong {
+      font-size: 16px;
+    }
+  
+    .Veg-Starters img, .Nonveg-Starters img,
+    .Veg-Main-Course img, .Nonveg-Main-Course img,
+    .menu-category ul li img {
+      height: 180px;
+      width: 90%;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    header {
+      font-size: large;
+      padding: 15px;
+    }
+  
+    nav a {
+      font-size: 14px;
+      margin: 6px;
+    }
+  
+    .menu-category {
+      padding: 20px 10px;
+    }
+  
+    .menu-category h2 {
+      font-size: large;
+    }
+  
+    .Veg-Starters img, .Nonveg-Starters img,
+    .Veg-Main-Course img, .Nonveg-Main-Course img,
+    .menu-category ul li img {
+      height: 150px;
+      width: 100%;
+    }
+  
+    .menu-category li strong {
+      font-size: 15px;
+    }
+  
+    footer {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  
+  
+  
+  
